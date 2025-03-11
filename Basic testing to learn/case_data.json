@@ -1,0 +1,85 @@
+{
+  "CNR Number": "KLHC01-012596-2025",
+  "First Hearing Date": "18th February 2025",
+  "Next Hearing Date": "14th March 2025",
+  "Stage of Case": "ADMISSION",
+  "Coram": "HONOURABLE MR.JUSTICE N.NAGARESH",
+  "Bench Type": "Single",
+  "State": "",
+  "District": "",
+  "Petitioner and Advocate": "1) KARTHI KRISHNA NADH\n    Advocate- AKHIL SURESH\n2) MIDHUNA.S. MADHU,\n    Advocate-AKHIL SURESH\n3) MEGHANA A.P\n    Advocate-AKHIL SURESH\n4) VANDANA PRASAD\n    Advocate-AKHIL SURESH\n5) K.S VIJAYALAKSHMI\n    Advocate-AKHIL SURESH\n6) SIVAKUMAR.S.S\n    Advocate-AKHIL SURESH\n7) SRUTHY.P\n    Advocate-AKHIL SURESH\n8) MANISH KUMAR NIRMAL\n    Advocate-AKHIL SURESH\n9) ATHIRA P.C\n    Advocate-AKHIL SURESH\n10) AZFAR MUKARRAM KHAN\n    Advocate-AKHIL SURESH\n11) ASNA SITHARA K\n    Advocate-AKHIL SURESH\n12) HAFIS N\n    Advocate-AKHIL SURESH\n13) SUMITHA ANGEL MARY\n    Advocate-AKHIL SURESH\n14) MONIKA SHARMA\n    Advocate-AKHIL SURESH\n15) NITHIN. G. DAS\n    Advocate-AKHIL SURESH\n16) KHUSHUBU UDAY SHARMA\n    Advocate-AKHIL SURESH\n17) MOHAMMED FAIZ P.K\n    Advocate-AKHIL SURESH\n18) SANDRA S\n    Advocate-AKHIL SURESH\n19) MANSOOR ANSARI\n    Advocate-AKHIL SURESH\n20) JASMIN SHERIN N\n    Advocate-AKHIL SURESH\n21) ABIL P. B\n    Advocate-AKHIL SURESH\n22) PRIYADARSHINI C.S\n    Advocate-AKHIL SURESH\n23) JOSAN JOSEPH\n    Advocate-AKHIL SURESH",
+  "Respondent and Advocate": "1) NATIONAL COMMISSION FOR HOEMEOPATHY (NCH)\n  \n2) THE KERALA UNIVERSITY OF HEALTH SCIENCES\n3) THE CONTROLLER OF EXAMINATIONS\n4) SRI VIDHYADHIRAJA\n5) ATHURASRAMAM N.S.S. HOMEOPATHIC MEDICAL COLLEGE,\n6) GOVERNMENT HOMEOPATHIC MEDICAL COLLEGE",
+  "Acts": [
+    {
+      "underAct": "CONSTITUTION OF INDIA",
+      "underSection": "226"
+    }
+  ],
+  "Category": "151.00 University Act ( 351 )",
+  "Sub Category": "41.400 UNIVERSITY ACT - PERMISSION TO APPEAR FOR EXAMN. ( 1653 )",
+  "IA Details": [],
+  "Linked Cases": [],
+  "History of Case Hearings": [
+    {
+      "causeListType": "Separate List 1",
+      "judge": "HONOURABLE MR.JUSTICE N.NAGARESH",
+      "businessOnDate": "07-03-2025",
+      "hearingDate": "14-03-2025",
+      "purposeOfHearing": "ADMISSION"
+    },
+    {
+      "causeListType": "Separate List 1",
+      "judge": "HONOURABLE MR.JUSTICE N.NAGARESH",
+      "businessOnDate": "27-02-2025",
+      "hearingDate": "07-03-2025",
+      "purposeOfHearing": "ADMISSION"
+    },
+    {
+      "causeListType": "Part Two",
+      "judge": "HONOURABLE MR.JUSTICE N.NAGARESH",
+      "businessOnDate": "18-02-2025",
+      "hearingDate": "27-02-2025",
+      "purposeOfHearing": "ADMISSION"
+    }
+  ],
+  "Document Details": [
+    {
+      "srNo": "1",
+      "documentNo": "1",
+      "dateOfReceiving": "03-03-2025",
+      "filedBy": "THE KERALA UNIVERSITY OF HEALTH SCIENCES",
+      "nameOfAdvocate": "BINNY THOMAS",
+      "documentFiled": "STATEMENT"
+    }
+  ],
+  "Objection": [
+    {
+      "srNo": "Sr.No.",
+      "scrutinyDate": "Scrutiny Date",
+      "objection": "OBJECTION",
+      "objectionComplianceDate": "OBJECTION Compliance Date",
+      "receiptDate": "Receipt Date"
+    },
+    {
+      "srNo": "1",
+      "scrutinyDate": "10-02-2025",
+      "objection": "All Objections are Complied",
+      "objectionComplianceDate": "",
+      "receiptDate": ""
+    },
+    {
+      "srNo": "2",
+      "scrutinyDate": "17-02-2025",
+      "objection": "All Objections are Complied",
+      "objectionComplianceDate": "",
+      "receiptDate": ""
+    },
+    {
+      "srNo": "3",
+      "scrutinyDate": "17-02-2025",
+      "objection": "All Objections are Complied",
+      "objectionComplianceDate": "",
+      "receiptDate": ""
+    }
+  ]
+}
