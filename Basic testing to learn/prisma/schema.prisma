@@ -1,0 +1,184 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Case {
+  id                  Int       @id @default(autoincrement())
+  cnr_number          String    @unique
+  filing_number       String?
+  filing_date         DateTime?
+  registration_number String?
+  registration_date   DateTime?
+  case_type           String?
+  case_status         String?
+  court_id            Int?
+  created_at          DateTime  @default(now())
+  updated_at          DateTime  @updatedAt
+
+  // Relations
+  court               Court?            @relation(fields: [court_id], references: [id])
+  parties             CaseParty[]
+  acts                CaseAct[]
+  hearings            CaseHearing[]
+  documents           CaseDocument[]
+  objections          CaseObjection[]
+  interimApplications InterimApplication[]
+  linkedCases         CaseLinkage[]
+  
+  @@index([cnr_number])
+  @@index([case_type])
+  @@index([case_status])
+}
+
+model Court {
+  id          Int     @id @default(autoincrement())
+  name        String
+  state       String?
+  district    String?
+  court_type  String?
+  
+  cases       Case[]
+  
+  @@unique([name, state, district])
+}
+
+model Party {
+  id           Int        @id @default(autoincrement())
+  name         String
+  party_type   String     // Petitioner, Respondent, etc.
+  
+  caseParties  CaseParty[]
+  
+  @@index([name])
+  @@index([party_type])
+}
+
+model CaseParty {
+  id           Int       @id @default(autoincrement())
+  case_id      Int
+  party_id     Int
+  advocate     String?
+  
+  case         Case      @relation(fields: [case_id], references: [id])
+  party        Party     @relation(fields: [party_id], references: [id])
+  
+  @@unique([case_id, party_id])
+}
+
+model Act {
+  id           Int       @id @default(autoincrement())
+  name         String    @unique
+  
+  caseActs     CaseAct[]
+}
+
+model CaseAct {
+  id           Int       @id @default(autoincrement())
+  case_id      Int
+  act_id       Int
+  section      String?
+  
+  case         Case      @relation(fields: [case_id], references: [id])
+  act          Act       @relation(fields: [act_id], references: [id])
+  
+  @@unique([case_id, act_id, section])
+}
+
+model CaseHearing {
+  id                Int       @id @default(autoincrement())
+  case_id           Int
+  hearing_date      DateTime
+  next_date         DateTime?
+  judge             String?
+  cause_list_type   String?
+  purpose           String?
+  business_on_date  String?
+  
+  case              Case      @relation(fields: [case_id], references: [id])
+  
+  @@index([case_id])
+  @@index([hearing_date])
+}
+
+model CaseDocument {
+  id                Int       @id @default(autoincrement())
+  case_id           Int
+  document_no       String?
+  date_of_receiving DateTime?
+  filed_by          String?
+  advocate_name     String?
+  document_type     String?
+  
+  case              Case      @relation(fields: [case_id], references: [id])
+  
+  @@index([case_id])
+}
+
+model CaseObjection {
+  id                      Int       @id @default(autoincrement())
+  case_id                 Int
+  scrutiny_date           DateTime?
+  objection_description   String?   @db.Text
+  objection_compliance_date DateTime?
+  receipt_date            DateTime?
+  
+  case                    Case      @relation(fields: [case_id], references: [id])
+  
+  @@index([case_id])
+}
+
+model InterimApplication {
+  id            Int       @id @default(autoincrement())
+  case_id       Int
+  ia_number     String?
+  filing_date   DateTime?
+  next_date     DateTime?
+  ia_status     String?
+  party         String?
+  
+  case          Case      @relation(fields: [case_id], references: [id])
+  
+  @@index([case_id])
+}
+
+model CaseLinkage {
+  id                Int       @id @default(autoincrement())
+  case_id           Int
+  linked_filing_no  String?
+  linked_case_no    String?
+  
+  case              Case      @relation(fields: [case_id], references: [id])
+  
+  @@index([case_id])
+}
+
+model FailedCNR {
+  id            Int       @id @default(autoincrement())
+  cnr_number    String    @unique
+  error_message String?   @db.Text
+  attempt_count Int       @default(1)
+  last_attempt  DateTime  @default(now())
+  
+  @@index([cnr_number])
+}
+
+model ScraperLog {
+  id             Int       @id @default(autoincrement())
+  start_time     DateTime  @default(now())
+  end_time       DateTime?
+  cnr_range      String?
+  success_count  Int       @default(0)
+  failure_count  Int       @default(0)
+  notes          String?   @db.Text
+}

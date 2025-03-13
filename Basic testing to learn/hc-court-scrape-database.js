@@ -353,8 +353,8 @@ async function main() {
     const page = await browser.newPage();
     await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36');
 
-    const startCNR = 125960; // Starting 6-digit number
-    const endCNR = 125965; // Ending 6-digit number (adjust as needed)
+    const startCNR = 0; // Starting 6-digit number
+    const endCNR = 400000; // Ending 6-digit number (adjust as needed)
     const year = '2025'; // Year part of the CNR number
     const prefix = 'KLHC01'; // Prefix part of the CNR number
 
