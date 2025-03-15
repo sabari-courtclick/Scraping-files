@@ -1,0 +1,61 @@
+{
+  "case_details": {
+    "case_type": "AS INDIGENT - APPEAL SUIT (INDIGENT)",
+    "filing_number": "1581/2024",
+    "filing_date": "18-11-2024",
+    "registration_number": "148/2024",
+    "registration_date": "21-11-2024",
+    "cnr_number": "KLKK010067682024"
+  },
+  "case_status": {
+    "first_hearing_date": "21st November 2024",
+    "next_hearing_date": "20th May 2025",
+    "case_stage": "Issue notice to respondent. For return of Notice.",
+    "court_number_judge": "1-District and Sessions Judge"
+  },
+  "litigant_and_advocate": {
+    "petitioners": [
+      {
+        "name": "Lalitha",
+        "advocate": "Jayadeep M"
+      }
+    ],
+    "respondents": []
+  },
+  "acts": {
+    "CODE OF CIVIL PROCEDURE": "section 96 order XLI rule 1"
+  },
+  "ia_status": {
+    "ia_number": [],
+    "party_name": [],
+    "date_of_filing": [],
+    "next_date_purpose": [],
+    "ia_status": []
+  },
+  "case_history": {
+    "judge": [
+      "District and Sessions Judge",
+      "District and Sessions Judge",
+      "District and Sessions Judge",
+      "District and Sessions Judge"
+    ],
+    "business_on_date": [
+      "21-11-2024",
+      "16-12-2024",
+      "21-01-2025",
+      "11-03-2025"
+    ],
+    "hearing_date": [
+      "16-12-2024",
+      "21-01-2025",
+      "11-03-2025",
+      "20-05-2025"
+    ],
+    "purpose": [
+      "Issue notice to respondent. For return of Notice.",
+      "Issue notice to respondent. For return of Notice.",
+      "Issue notice to respondent. For return of Notice.",
+      "Issue notice to respondent. For return of Notice."
+    ]
+  }
+}

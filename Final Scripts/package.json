@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "2captcha-ts": "^2.3.6",
+    "axios": "^1.8.3",
+    "dotenv": "^16.4.7",
+    "puppeteer": "^24.4.0",
+    "puppeteer-cluster": "^0.24.0",
+    "sharp": "^0.33.5"
+  },
+  "name": "final-scripts",
+  "version": "1.0.0",
+  "main": "script1.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

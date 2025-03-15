@@ -1,0 +1,47 @@
+{
+  "case_details": {
+    "case_type": "SC - SESSIONS CASE",
+    "filing_number": "100193/2019",
+    "filing_date": "22-02-2019",
+    "registration_number": "100193/2019",
+    "registration_date": "28-02-2019",
+    "cnr_number": "KLER010024292019"
+  },
+  "case_status": {
+    "first_hearing_date": "23rd March 2019",
+    "court_number_judge": "1-District and Sessions Judge, Ernakulam"
+  },
+  "litigant_and_advocate": {
+    "petitioners": [
+      {
+        "name": "State of Kerala (Police)",
+        "advocate": "Public Prosecutor"
+      }
+    ],
+    "respondents": []
+  },
+  "acts": {
+    "IPC \\": "324,308"
+  },
+  "ia_status": {
+    "ia_number": [],
+    "party_name": [],
+    "date_of_filing": [],
+    "next_date_purpose": [],
+    "ia_status": []
+  },
+  "case_history": {
+    "judge": [
+      "District and Sessions Judge, Ernakulam"
+    ],
+    "business_on_date": [
+      "23-03-2019"
+    ],
+    "hearing_date": [
+      ""
+    ],
+    "purpose": [
+      "Disposed"
+    ]
+  }
+}
